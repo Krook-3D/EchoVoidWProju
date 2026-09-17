@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+	--color-bg: #080909;
+	--color-bg-soft: #101313;
+	--color-panel: #171a1a;
+	--color-panel-light: #202424;
+	--color-text: #f4f4f0;
+	--color-muted: #a3aaa3;
+	--color-border: #303636;
+	--color-accent: #8cff2f;
+	--color-danger: #ff3b3b;
+
+	--font-main: 'Space Mono', monospace;
+	--font-heading: 'Black Ops One', sans-serif;
+
+	--max-width: 1120px;
+}
+
+h1 {
+	font-family: var(--font-heading);
+	font-weight: 400;
+}
+h2 {
+	font-family: var(--font-heading);
+	font-weight: 400;
+}
+h3,
+h4,
+h5 {
+	font-family: var(--font-heading);
+	font-weight: 400;
+}
+h6 {
+	font-family: var(--font-heading);
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-main);
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background: radial-gradient(circle at 20% 10%, rgba(255, 47, 47, 0.12), transparent 28%), linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 18px);
+	opacity: 0.85;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-accent);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.container {
+	width: min(var(--max-width), calc(100% - 32px));
+	margin: 0 auto;
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	background: rgba(8, 9, 9, 0.92);
+	border-bottom: 1px solid var(--color-border);
+	backdrop-filter: blur(10px);
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	min-height: 76px;
+}
+
+.site-logo {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 800;
+	font-size: 1.2rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.custom-logo {
+	max-height: 48px;
+	width: auto;
+}
+
+.logo-mark {
+	display: inline-grid;
+	place-items: center;
+	width: 38px;
+	height: 38px;
+	background: var(--color-accent);
+	color: #050505;
+	font-weight: 900;
+}
+
+.primary-menu,
+.footer-menu {
+	display: flex;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.primary-menu a,
+.footer-menu a {
+	color: var(--color-muted);
+	font-size: 0.95rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.menu-toggle {
+	display: none;
+	border: 1px solid var(--color-border);
+	background: var(--color-panel);
+	color: var(--color-text);
+	padding: 10px 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.hero-section {
+	padding: 96px 0 72px;
+
+	background-image:
+		linear-gradient(
+			90deg,
+			rgba(5, 5, 5, 0.97) 0%,
+			rgba(5, 5, 5, 0.82) 40%,
+			rgba(5, 5, 5, 0.55) 100%
+		),
+		url("https://travelshop.local/wp-content/uploads/2026/08/DJI_0003-scaled.jpg");
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	border-bottom: 1px solid var(--color-border);
+}
+
+.hero-grid {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+	gap: 44px;
+	align-items: center;
+}
+
+.eyebrow,
+.meta-line {
+	margin: 0 0 14px;
+	color: var(--color-accent);
+	font-size: 0.78rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+
+
+.hero-copy p,
+.section-heading p,
+.split-section p,
+.safety-box p,
+.content-card p,
+.site-footer p {
+	color: var(--color-muted);
+}
+
+.hero-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+	margin-top: 28px;
+}
+
+.button,
+.wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 13px 18px;
+	border: 1px solid var(--color-accent);
+	background: var(--color-accent);
+	color: #050505;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+.button:hover,
+.wp-block-button__link:hover {
+	background: transparent;
+	color: var(--color-accent);
+}
+
+.button-outline {
+	background: transparent;
+	color: var(--color-accent);
+}
+
+.hero-panel {
+	min-height: 410px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 28px;
+	border: 1px solid var(--color-border);
+
+	background-image:
+		linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.15),
+			rgba(0, 0, 0, 0.92)
+		),
+		url("https://travelshop.local/wp-content/uploads/2026/08/IMG_5194-scaled.jpeg");
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero-panel span,
+.map-card span {
+	color: var(--color-danger);
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+
+.hero-panel h2 {
+	max-width: 420px;
+	font-size: 2rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.section {
+	padding: 72px 0;
+}
+
+.section-dark {
+	background: var(--color-bg-soft);
+	border-top: 1px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.section-heading {
+	max-width: 760px;
+	margin-bottom: 28px;
+}
+
+.section-heading h2,
+.archive-header h1 {
+	font-size: clamp(2rem, 5vw, 3.6rem);
+}
+
+.feature-grid,
+.map-grid,
+.post-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 18px;
+}
+
+.feature-card,
+.map-card,
+.content-card,
+.safety-box {
+	border: 1px solid var(--color-border);
+	background: rgba(23, 26, 26, 0.92);
+	padding: 24px;
+}
+
+.feature-card h3,
+.map-card h3,
+.content-card h2,
+.content-card h3 {
+	margin: 0 0 12px;
+	font-size: 1.35rem;
+	line-height: 1.15;
+	text-transform: uppercase;
+}
+
+.feature-card {
+	background-size: cover;
+	background-position: center;
+	transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.feature-card a {
+	color: var(--color-text);
+	transition: color 0.2s ease;
+}
+
+.feature-card a:hover {
+	color: var(--color-accent);
+}
+
+.map-card {
+	min-height: 230px;
+	background: linear-gradient(180deg, var(--color-panel-light), var(--color-panel));
+}
+
+.split-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+	align-items: center;
+}
+
+.art-section {
+	background: linear-gradient(135deg, rgba(140, 255, 47, 0.08), rgba(255, 59, 59, 0.08));
+}
+
+.image-placeholder,
+.card-image img,
+.featured-image img {
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+	margin-bottom: 18px;
+	background: repeating-linear-gradient(135deg, #252b2b 0 14px, #151818 14px 28px);
+	border: 1px solid var(--color-border);
+}
+
+.image-placeholder {
+	display: grid;
+	place-items: center;
+	color: var(--color-muted);
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.narrow-content {
+	max-width: 840px;
+}
+
+.entry-content a,
+.text-link {
+	color: var(--color-accent);
+	font-weight: 800;
+}
+
+.entry-content h2,
+.entry-content h3 {
+	line-height: 1.15;
+	text-transform: uppercase;
+}
+
+.entry-content p,
+.entry-content li {
+	color: #d8ddd8;
+}
+
+.post-list {
+	display: grid;
+	gap: 20px;
+}
+
+.post-nav {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	margin-top: 32px;
+	border-top: 1px solid var(--color-border);
+	padding-top: 22px;
+}
+
+.archive-header {
+	margin-bottom: 28px;
+}
+
+.site-footer {
+	padding: 48px 0 20px;
+	background: #050606;
+	border-top: 1px solid var(--color-border);
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: 1.4fr 1fr 1fr;
+	gap: 32px;
+}
+
+.footer-logo {
+	margin-bottom: 14px;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.social-links a {
+	color: var(--color-muted);
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.footer-bottom {
+	margin-top: 28px;	
+	padding-top: 18px;
+	border-top: 1px solid var(--color-border);
+}
+
+.error-page {
+	min-height: 60vh;
+}
+
+@media (max-width: 900px) {
+	.hero-grid,
+	.split-section,
+	.footer-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.feature-grid,
+	.map-grid,
+	.post-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 680px) {
+	.header-inner {
+		flex-wrap: wrap;
+	}
+
+	.menu-toggle {
+		display: inline-flex;
+	}
+
+	.main-navigation {
+		display: none;
+		width: 100%;
+	}
+
+	.main-navigation.is-open {
+		display: block;
+	}
+
+	.primary-menu,
+	.footer-menu {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.hero-section {
+		padding: 64px 0 48px;
+	}
+
+	.hero-panel {
+		min-height: 300px;
+	}
+
+	.feature-grid,
+	.map-grid,
+	.post-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.section {
+		padding: 52px 0;
+	}
+
+	.post-nav {
+		flex-direction: column;
+	}
+}
+/* Echo Void heading font override */
+.hero-copy h1,
+.section-heading h2,
+.hero-panel h2,
+.feature-card h3,
+.map-card h3,
+.content-card h2,
+.content-card h3,
+.split-section h2,
+.archive-header h1,
+.entry-content h2,
+.entry-content h3 {
+	font-family: 'Black Ops One', sans-serif !important;
+	font-weight: 400;
+}
