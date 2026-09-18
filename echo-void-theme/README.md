@@ -78,7 +78,7 @@ Homepage section text is in `front-page.php`. The theme currently includes:
 - Latest posts section
 - Safety and ethics section
 
-For a school project, this is simple to explain because the content is written directly in the homepage template.
+
 
 ## WordPress template hierarchy
 
@@ -95,7 +95,7 @@ This theme uses standard WordPress templates:
 
 AI helped create the initial theme structure, starter PHP templates, homepage placeholder content, dark urbex CSS styling, responsive layout rules, mobile menu JavaScript, and this README file.
 
-The project owner should review, edit, and understand the files before presenting the project.
+
 
 ## Changelog
 
@@ -108,11 +108,4 @@ The project owner should review, edit, and understand the files before presentin
 - Added menu support, post thumbnails, custom logo, title tag, CSS enqueue, and JS enqueue.
 - Added documentation and image placeholder instructions.
 
-## Future improvements
 
-- Add real project images in `assets/images/` or through WordPress featured images.
-- Create real pages for About, Locations, Maps, Safety, and Contact.
-- Add blog posts with categories such as Soviet Ruins, Drone Footage, Urban Art, and Safety.
-- Replace placeholder social media links in `footer.php`.
-- Create a real `screenshot.png` image for the WordPress theme screen.
-- Add webshop functionality later only if required.
