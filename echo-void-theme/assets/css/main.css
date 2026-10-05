@@ -337,6 +337,27 @@ img {
 	background: linear-gradient(180deg, var(--color-panel-light), var(--color-panel));
 }
 
+.map-card img {
+  width: calc(100% + 48px);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin: -24px -24px 20px;
+}
+
+.map-card h3 a {
+  color: inherit;
+}
+
+.map-card h3 a:hover {
+  color: var(--color-accent);
+}
+
+.product-price {
+  color: var(--color-accent) !important;
+  font-weight: 900;
+  margin-top: 16px;
+}
+
 .split-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
