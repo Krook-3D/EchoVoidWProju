@@ -164,7 +164,7 @@ img {
         ),
         url("https://travelshop.local/wp-content/uploads/2026/08/DJI_0003-scaled.jpg");
 
-    background-size: cover;
+    background-size: auto 115%, cover; 
     background-position: center center;
     background-repeat: no-repeat;
 
