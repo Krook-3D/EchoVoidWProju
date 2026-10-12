@@ -32,15 +32,24 @@
 		</div>
 
 		<div class="social-links">
-			<a href="#"><?php esc_html_e( 'Instagram', 'echo-void-theme' ); ?></a>
-			<a href="#"><?php esc_html_e( 'YouTube', 'echo-void-theme' ); ?></a>
-			<a href="#"><?php esc_html_e( 'TikTok', 'echo-void-theme' ); ?></a>
+			<a href="https://www.instagram.com/juuso_krook/"><?php esc_html_e( 'Instagram', 'echo-void-theme' ); ?></a>
+			
 		</div>
 	</div>
 
 	<div class="container footer-bottom">
-		<p>&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Student project.', 'echo-void-theme' ); ?></p>
+	<p>© <?php echo esc_html( date_i18n( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Student project.', 'echo-void-theme' ); ?></p>
+
+	<div class="footer-legal-links">
+		<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'privacy-policy' ) ) ); ?>">
+			<?php esc_html_e( 'Privacy Policy', 'echo-void-theme' ); ?>
+		</a>
+
+		<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'refund-and-returns-policy' ) ) ); ?>">
+			<?php esc_html_e( 'Refund and Returns Policy', 'echo-void-theme' ); ?>
+		</a>
 	</div>
+</div>
 </footer>
 <?php wp_footer(); ?>
 </body>
