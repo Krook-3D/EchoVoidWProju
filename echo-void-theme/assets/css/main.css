@@ -162,7 +162,7 @@ img {
             rgba(5, 5, 5, 0.82) 40%,
             rgba(5, 5, 5, 0.55) 100%
         ),
-        url("https://travelshop.local/wp-content/uploads/2026/08/DJI_0003-scaled.jpg");
+        var(--echo-void-hero-bg);
 
     background-size: auto 115%, cover; 
     background-position: center center;
@@ -248,7 +248,7 @@ img {
 			rgba(0, 0, 0, 0.15),
 			rgba(0, 0, 0, 0.92)
 		),
-		url("https://travelshop.local/wp-content/uploads/2026/08/IMG_5194-scaled.jpeg");
+		var(--echo-void-panel-bg);
 
 	background-size: cover;
 	background-position: center;
@@ -616,4 +616,25 @@ img {
 .entry-content h3 {
     font-family: 'Black Ops One', sans-serif !important;
     font-weight: 400;
+}
+
+.footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer-legal-links a {
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .footer-legal-links {
+        gap: 0.75rem;
+    }
+
+    .footer-legal-links a {
+        white-space: normal;
+    }
 }
