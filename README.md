@@ -180,7 +180,7 @@ The use of AI was part of the development workflow rather than the purpose of th
 
 **PT/VTT Demonstration Project**
 
-finished and got degree 5/5
+Finished and got degree 5/5
 
 **Field:** Information and Communications Technology  
 **Specialization:** Software Development / Web Development
