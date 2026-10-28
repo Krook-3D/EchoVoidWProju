@@ -266,7 +266,7 @@ The resulting code and content were reviewed and integrated as part of the proje
 
 Project Status
 Version: 1.0.0
-Status: Final
+Status: Finalized and got degree 5/5
 
 The Echo Void theme is considered complete for the project presentation and deployment.
 
